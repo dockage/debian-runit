@@ -9,7 +9,7 @@ ENV SERVICE_AVAILABLE_DIR=/etc/sv \
 ENV SVDIR=${SERVICE_ENABLED_DIR} \
     SVWAIT=7
 
-ADD https://cdn.rawgit.com/dockage/runit-scripts/4ea7659b/scripts/installer /opt/
+ADD https://cdn.rawgit.com/dockage/runit-scripts/f994f02f/scripts/installer /opt/
 RUN apt-get update \
     && apt-get install -y runit \
     && mkdir -p ${SERVICE_AVAILABLE_DIR} ${SERVICE_ENABLED_DIR} \
